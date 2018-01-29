@@ -1,0 +1,71 @@
+$zero: 0
+$percent_hun: 100%
+$border: 5px solid black
+$positioncenter: center
+$px_thirty: 30px
+
+* 
+  margin: $zero
+  padding: $zero
+  box-sizing: border-box
+
+body 
+  font-family: "Arial", sans-serif
+  color: #000
+  font-size: 0.5px
+  height: 94vh
+  position: relative 
+  background: #404040
+
+h1 
+  text-align: $positioncenter
+  font-size: 1.5em
+  color: #fff
+  margin: $px_thirty $zero 
+
+.container 
+  display: flex
+  justify-content: $positioncenter
+  align-items: $positioncenter
+  height: 60vh 
+
+
+.wrapper 
+  width: 700px
+  height: 350px
+  overflow: hidden 
+
+
+
+.inner-wrapper 
+  width: 500%
+  height: $percent_hun
+  position: relative
+  left: 0%
+  background: #d1d1cf
+
+.slide 
+  width: calc(100% / 5)
+  height: $percent_hun
+  float: left
+  display: flex
+  justify-content: $positioncenter
+  align-items: $positioncenter 
+
+.button 
+  width: $px_thirty
+  height: $px_thirty
+  border-top: $border
+  border-color: #fff
+  position: absolute
+  cursor: pointer 
+
+.prev 
+  border-left: $border
+  left: 10%
+  transform: rotate(-45deg) 
+
+.next 
+  border-right: $border
+  right: 10%
+  transform: rotate(45deg) 
